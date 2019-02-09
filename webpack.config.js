@@ -10,6 +10,9 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   devtool: false,
+  devServer: {
+    historyApiFallback: true
+  },
   entry: {
     app: [
       './src/index.js',
