@@ -29,7 +29,7 @@ const Wrapper = styled.div`
   font-weight: bold;
   font-size: 6em;
   height: 300px;
-  background-color: #f1e0d6;
+  background-color: #d4ffd7;
   @media (max-width: 479px) {
     height: 235px;
     font-size: 5em;

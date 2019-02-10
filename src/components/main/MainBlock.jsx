@@ -7,7 +7,7 @@ import NotFound from '../NotFound';
 const MainBlock = () => (
   <Switch>
     <Route path="/add" component={Add} />
-    <Route path="/profile" component={Profile} />
+    <Route path="/" component={Profile} />
     <Route path="*" component={NotFound} />
   </Switch>
 );

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-// sanitize.css v8.0.0 github.com/csstools/sanitize.css
+// sanitize.css v8.0.0 github.com/csstools/sanitize.css с правками
 
 const GlobalStyle = createGlobalStyle`
 
@@ -64,7 +64,13 @@ nav ol,
 nav ul {
   list-style: none;
 }
-
+ul {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
 pre {
   font-family:
   Menlo,
