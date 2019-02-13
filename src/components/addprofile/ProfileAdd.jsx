@@ -31,42 +31,42 @@ const FormikForm = ({
         <label htmlFor="firstName">
           { 'Имя' }
           <Field type="text" name="firstName" placeholder="text" id="firstName" />
-          { touched.firstName && errors.firstName && <p>{errors.firstName}</p> }
+          { touched.firstName && errors.firstName && <span>{errors.firstName}</span> }
         </label>
       </div>
       <div>
         <label htmlFor="lastName">
           { 'Фамилия' }
           <Field type="text" name="lastName" />
-          { touched.lastName && errors.lastName && <p>{errors.lastName}</p> }
+          { touched.lastName && errors.lastName && <span>{errors.lastName}</span> }
         </label>
       </div>
       <div>
         <label htmlFor="email">
           { 'Почта' }
           <Field type="mail" name="email" placeholder="text" id="email" />
-          { touched.email && errors.email && <p>{errors.email}</p> }
+          { touched.email && errors.email && <span>{errors.email}</span> }
         </label>
       </div>
       <div>
         <label htmlFor="lvl">
           { 'Уровень' }
           <Field type="range" name="lvl" id="lvl"  min='1' max='3' step='1' />
-          { touched.lvl && errors.lvl && <p>{errors.lvl}</p> }
+          { touched.lvl && errors.lvl && <span>{errors.lvl}</span> }
         </label>
       </div>
       <div>
         <label htmlFor="desc">
           { 'О себе' }
           <Field component="textarea" name="desc"  id="desc" />
-          { touched.desc && errors.desc && <p>{errors.desc}</p> }
+          { touched.desc && errors.desc && <span>{errors.desc}</span> }
         </label>
       </div>
       <div>
         <label htmlFor="fast">
           { 'Подтверждение' }
           <Field type="checkbox" />
-          { touched.fast && errors.fast && <p>{errors.fast}</p> }
+          { touched.fast && errors.fast && <span>{errors.fast}</span> }
         </label>
       </div>
       
