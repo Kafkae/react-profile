@@ -56,19 +56,13 @@ const FormikForm = ({
         </label>
       </div>
       <div>
-        <label htmlFor="средний">
-          { 'Подтверждение' }
-          <Field type="checkbox" />
-          { touched.fast && errors.fast && <p>{errors.fast}</p> }
-        </label>
-      </div>
-      <div>
         <label htmlFor="fast">
           { 'Подтверждение' }
           <Field type="checkbox" />
           { touched.fast && errors.fast && <p>{errors.fast}</p> }
         </label>
       </div>
+      
       <button type="submit" disabled={isSubmitting}>Submit</button>
     </Form>
   </Fragment>
