@@ -29,7 +29,7 @@ const StyledLink = styled(NavLink)`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
   &:hover {
     background-color: tomato;
   }
@@ -38,8 +38,8 @@ const StyledLink = styled(NavLink)`
 const Nav = () => (
   <Wrapper>
     <List>
-      <Elem><StyledLink exact activeStyle={{ borderBottom: '3px solid tomato' }} to="/">profile</StyledLink></Elem>
-      <Elem><StyledLink exact activeStyle={{ borderBottom: '3px solid tomato' }} to="/add">add</StyledLink></Elem>
+      <Elem><StyledLink exact activeStyle={{ borderBottom: '2px solid tomato' }} to="/">profile</StyledLink></Elem>
+      <Elem><StyledLink activeStyle={{ borderBottom: '2px solid tomato' }} to="/add">add</StyledLink></Elem>
     </List>
   </Wrapper>
 );
