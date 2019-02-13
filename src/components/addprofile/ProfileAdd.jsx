@@ -56,6 +56,13 @@ const FormikForm = ({
         </label>
       </div>
       <div>
+        <label htmlFor="desc">
+          { 'О себе' }
+          <Field component="textarea" name="desc"  id="desc" />
+          { touched.desc && errors.desc && <p>{errors.desc}</p> }
+        </label>
+      </div>
+      <div>
         <label htmlFor="fast">
           { 'Подтверждение' }
           <Field type="checkbox" />
