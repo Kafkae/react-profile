@@ -85,8 +85,21 @@ const Addprofile = withFormik({
     };
   },
   validationSchema: Yup.object().shape({
-    firstName: Yup.string().required('Email is required'),
-    lastName: Yup.string().required('Email is required'),
+    firstName: Yup.string()
+      .min(2, 'Слишком короткое имя!')
+      .max(50, 'Слишком Длинное имя!')
+      .required('Обезательное поле!'),
+    lastName: Yup.string()
+      .min(2, 'Слишком короткая фамилия!')
+      .max(50, 'Слишком длинная фамилия!')
+      .required('Обезательное поле!'),
+    email: Yup.string()
+      .email('Нужна почта!')
+      .required('Обезотельное поле!'),
+    desc: Yup.string()
+      .min(10, 'Расскажи о себе подробнее!')
+      .max(150, 'Давай короче!')
+      .required('Обезательное поле!'),
   }),
   handleSubmit(values, { resetForm }) {
     resetForm();
