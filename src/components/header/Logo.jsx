@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   background-color: #d4ffd7;
   @media (max-width: 479px) {
     height: 235px;
-    font-size: 5em;
+    font-size: 4.3em;
   }
   @media (max-width: 368px) {
     height: 60px;
