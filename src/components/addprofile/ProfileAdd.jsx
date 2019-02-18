@@ -200,7 +200,7 @@ const Button = styled.button`
   @media (max-width: 680px) {
     grid-column: 1/-1;
   }
-  @media (max-width: 680px) {
+  @media (max-width: 490px) {
     grid-row: 10/9;
   }
 `;
